@@ -33,7 +33,7 @@ int main()
 
 }
 */
-
+/* 
 #include<iostream>
 #include<string>
 
@@ -54,4 +54,45 @@ int main()
 	return 0;
 
 }
+*/
+/*
+// 1-5
+#include<iostream>
+#include<string>
 
+int main()
+{
+
+	{
+		std::string s = "a string";
+		{
+			std::string x = s + ", reallly";
+			std::cout << s << std::endl;
+			
+		}
+		std::cout << x << std::endl;	//x is out of its scope here
+
+	}
+return 0;
+
+// 运行结果 helloworldExceise.cpp: In function ‘int main()’:
+//helloworldExceise.cpp:73:16: error: ‘x’ was not declared in this scope
+//   std::cout << x << std::endl; //x is out of its scope here
+}
+*/ 
+
+// 1-6
+#include<iostream>
+#include<string>
+ 
+int main()
+{
+	std::cout << "what is your name?";
+	std::string name;
+	std::cin >> name;
+	std::cout << "hello," << name << std::endl << "and whar is yours?";
+	std::cin >> name;
+	std::cout << "hello" << name << "; nice too meet you too!" << std::endl;
+	return 0;
+
+}

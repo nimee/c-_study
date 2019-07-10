@@ -51,4 +51,5 @@ int main()
         return 0;               
 }
 */
-//习题 3-3
+//习题 3-3 Write a program to count how many times each distinct word appears in its input
+// https://blog.csdn.net/thinkheart/article/details/59525091

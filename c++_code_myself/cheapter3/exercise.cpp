@@ -53,3 +53,65 @@ int main()
 */
 //习题 3-3 Write a program to count how many times each distinct word appears in its input
 // https://blog.csdn.net/thinkheart/article/details/59525091
+/*
+ *#include <iostream>
+#include <string>
+#include <vector>
+ 
+using namespace std;
+ 
+int main() {
+	typedef vector<string>::size_type vec_sz;
+ 
+	vector<string> words;
+	vector<int> counts;
+ 
+	cout << "Words: ";
+	string s;
+ 
+	while (cin >> s) {
+		bool found = false;
+ 
+		for (vec_sz i = 0; i < words.size(); ++i) {
+			if (s == words[i]) {
+				++counts[i];
+				found = true;
+			}
+		}
+ 
+		if (!found) {
+			words.push_back(s);
+			counts.push_back(1);
+		}
+	}
+ 
+	for (vec_sz i = 0; i < words.size(); ++i)
+		cout << words[i] << " appeared " << counts[i] << " times" << endl;
+ 
+	return 0;
+}
+
+ */
+
+
+
+#include<iostream>
+#include<string>
+#include<vector>
+
+using namespace std;
+
+int main()
+{
+    vector<string> words;
+    deftype vector(string)::size_type vec_sz;
+    vector<int> counts;
+    cout << "words";
+    string s;
+
+    whiel(cin >> s){
+            bool found = false;
+            for(vec_sz i=0;i)
+    }
+    
+}

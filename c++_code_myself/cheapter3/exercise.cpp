@@ -93,8 +93,8 @@ int main() {
 
  */
 
-
-
+//习题3-4
+/*
 #include<iostream>
 #include<string>
 #include<vector>
@@ -104,14 +104,63 @@ using namespace std;
 int main()
 {
     vector<string> words;
-    deftype vector(string)::size_type vec_sz;
+    typedef vector<string>::size_type vec_sz;
+    typedef string::size_type str_sz;
     vector<int> counts;
-    cout << "words";
+    cout << "words" << endl ;
     string s;
 
-    whiel(cin >> s){
-            bool found = false;
-            for(vec_sz i=0;i)
+    while(cin >> s){
+        words.push_back(s);
+
     }
+    str_sz i=0,j=1;
+    for(vec_sz k=0;k!=words.size();k++)
+    {
+        str_sz m = words[k].size();
+        if(m>i)
+                i=m;
+        if(m<j)
+                j=m;
+    }
+    cout << "最长字符长度:" << i << endl;
+    cout << "最短字符长度:" << j << endl;
     
+    
+}
+*/
+//习题3-5
+#include<iostream>
+#include<string>
+#include<vector>
+
+using namespace std;
+
+int main()
+{
+        vector<string> name;
+        vector<string>    score;
+        string s;
+        typedef vector<string>::size_type vec_sz;
+        bool kinds = false;
+        while(cin >> s)
+        {
+            if(!kinds){
+
+                    name.push_back(s);
+                    kinds = true;
+                    continue;
+            }
+            if(kinds){
+
+                    score.push_back(s);
+                    kinds = false;
+                    continue;
+            }
+        }
+        for(vec_sz i=0;i!=name.size();i++){
+                
+                cout << "姓名：" << name[i] << endl;
+                cout << "成绩：" << score[i] << endl;
+        }
 }

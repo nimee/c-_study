@@ -16,7 +16,8 @@ int main()
         address.sin_port=htons(8080);
         inet_pton(AF_INET,"10.20.218.63",&address.sin_addr.s_addr);
         connect(sock,(struct sockaddr*)&address,sizeof(address));
-        send(sock,&hello,1,0);
+       // send(sock,&hello,1,0);/*竟然能够和下式效果相同*/
+       write(sock,&hello,1);
         printf("a已经提价");
         
 }
